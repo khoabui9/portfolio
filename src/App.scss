@@ -1,0 +1,106 @@
+@import "./styles/fonts.scss";
+
+#root {
+  height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.05rem;
+  color: #161f38;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pd-0 {
+  padding: 0 !important;
+}
+
+.mg-0 {
+  margin: 0 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.color-gray {
+  color: #8a8f9b !important
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,81 @@
+.appContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.appHeader {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.appHeader p {
+  margin: 0;
+}
+
+.appHeader_container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appHeader_nav {
+  width: 100%;
+}
+
+.appHeader_nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appHeader_nav__item {
+  padding: 10px;
+}
+
+.appHeader_logo {
+  left: 0px;
+  font-size: 25px;
+  z-index: 99;
+}
+
+.appHeader_contact {
+  right: 0;
+  z-index: 99;
+}
+
+.appMain {
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
+  width: 100%;
+}
+
+.appFooter {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+/*# sourceMappingURL=containers.css.map */

@@ -1,10 +1,20 @@
 import React from "react";
 import navigations from "../../data/nav";
-import { withRouter } from "react-router-dom";
 
 import { history } from "../../utils/history";
 
-const Header = (props) => {
+type HeaderProps = {
+  IsOnMobileSize: boolean
+}
+
+type NavigationItemProps = {
+  navigation: {
+    name: string,
+    url: string
+  }
+}
+
+const Header = (props : HeaderProps) => {
   const { IsOnMobileSize } = props;
   return (
     <header className="appHeader">
@@ -37,6 +47,8 @@ const Header = (props) => {
   );
 };
 
+
+
 const Navigations = (props) => {
   const { navigations } = props;
   return (
@@ -49,7 +61,7 @@ const Navigations = (props) => {
   );
 };
 
-const NavigationItem = (props) => {
+const NavigationItem = (props : NavigationItemProps) => {
   const { navigation } = props;
 
   function handleItemClick() {
@@ -63,4 +75,4 @@ const NavigationItem = (props) => {
   );
 };
 
-export default withRouter(Header);
+export default Header;

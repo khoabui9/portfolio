@@ -7,8 +7,7 @@ import About from "./About";
 import Lottie from "react-lottie";
 import animationData from "../../assets/svg/GrowthColoured/GrowthAnimation.json";
 
-const MainAnimate = (props) => {
-  // const [divReveal, revealDivImage] = useState(false);
+const MainAnimate = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -17,13 +16,6 @@ const MainAnimate = (props) => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  // useEffect(() => {
-  //   onReveal();
-  // });
-
-  // function onReveal() {
-  //   revealDivImage(true);
-  // }
 
   return (
     <React.Fragment>

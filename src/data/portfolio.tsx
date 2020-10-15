@@ -43,16 +43,14 @@ export const educations = [
   {
     school: "Lahti University Of Applied Sciences",
     degree: "Business Information Technology",
-    description: null,
   },
   {
     school: "University Of Alicante",
     degree: "Exchange Student - Computer Science",
-    description: null,
   },
 ];
 
 export const about = [
   "Hi, I am Khoa, a creative and motivated software developer with a great passion for technology.",
-  "I like taking photos, videos and I like FPV drone",
+  "I love taking photos, videos and I like FPV drone",
 ];

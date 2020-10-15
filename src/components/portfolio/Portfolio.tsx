@@ -9,6 +9,39 @@ import TransitionGroup from "react-transition-group/TransitionGroup";
 import Lottie from "react-lottie";
 import animationData from "../../assets/svg/LottieAnimation/TestigTechColored.json";
 
+type ExpListProps = {
+  expList: {
+      company: string,
+      timeline:string,
+      description: string[],
+      stack: string
+  }[]
+}
+
+type ExpItemProps = {
+  exp: {
+    company: string,
+    timeline:string,
+    description: string[],
+    stack: string
+}, tag: number
+}
+
+type EduProps = {
+  eduList: {
+    school: string,
+    degree: string,
+  }[]
+}
+
+type EduListItemProps = {
+  edu: {
+    school: string,
+    degree: string,
+  }, tag: number
+}
+
+
 const Portfolio = () => {
   let groupProps = {
     appear: true,
@@ -24,22 +57,6 @@ const Portfolio = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
-  // const [IsOnMobileSize, setIsOnMobile] = useState(IsMobileSize());
-
-  // useEffect(() => {
-  //   // initiate the event handler
-  //   window.addEventListener("resize", windowResize);
-
-  //   // this will clean up the event every time the component is re-rendered
-  //   return function cleanup() {
-  //     window.removeEventListener("resize", windowResize);
-  //   };
-  // });
-
-  // function windowResize() {
-  //   setIsOnMobile(IsMobileSize());
-  // }
 
   return (
     <Col className="portfolio_outer pos-absolute" sm="12">
@@ -93,7 +110,7 @@ const Portfolio = () => {
   );
 };
 
-const ExpList = (props) => {
+const ExpList = (props: ExpListProps) => {
   const { expList } = props;
 
   return (
@@ -108,7 +125,7 @@ const ExpList = (props) => {
   );
 };
 
-const ExpListItem = (props) => {
+const ExpListItem = (props: ExpItemProps) => {
   const { exp, tag } = props;
 
   return (
@@ -137,7 +154,7 @@ const ExpListItem = (props) => {
   );
 };
 
-const EduList = (props) => {
+const EduList = (props: EduProps) => {
   const { eduList } = props;
 
   return (
@@ -152,7 +169,7 @@ const EduList = (props) => {
   );
 };
 
-const EduListItem = (props) => {
+const EduListItem = (props: EduListItemProps) => {
   const { edu, tag } = props;
 
   return (

@@ -7,7 +7,7 @@ import MainContainer from "../../views/ContainerPage";
 const DefaultHeader = React.lazy(() => import("./DefaultHeader"));
 const DefaultFooter = React.lazy(() => import("./DefaultFooter"));
 
-const DefaultLayout = (props) => {
+const DefaultLayout = () => {
   const [IsOnMobileSize, setIsOnMobile] = useState(IsMobileSize());
 
   useEffect(() => {

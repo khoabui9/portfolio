@@ -2,7 +2,11 @@ import React from "react";
 import SocialList from "../social/SocialList";
 import { history } from "../../utils/history";
 
-const Footer = (props) => {
+type FooterProps = {
+  IsOnMobileSize: boolean
+}
+
+const Footer = (props : FooterProps) => {
   const { IsOnMobileSize } = props;
 
   return (

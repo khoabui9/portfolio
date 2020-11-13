@@ -19,7 +19,7 @@ export const social = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/_khoabui/",
+    url: "https://www.instagram.com/khoabuis/",
     icon: faInstagram,
   },
   {

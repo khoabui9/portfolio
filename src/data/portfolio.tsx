@@ -5,7 +5,7 @@ import project3 from "../assets/images/project3.png";
 export const experiences = [
   {
     company: "Mesensei Oy",
-    timeline: "May, 2019 to present",
+    timeline: "Nov, 2018 to present",
     description: [
       "Created Mesensei Admin Tool to manage all Mesensei Apps. Developed Mesensei Web App - Web based application for all Mesensei IOS and Android Apps.",
       "Widgets development.",

@@ -60,7 +60,7 @@ const Portfolio = () => {
 
   return (
     <Col className="portfolio_outer pos-absolute" sm="12">
-      <Row className="full m-0 pos-absolute portfolio_outer_inner">
+      <Row className="full pos-absolute portfolio_outer_inner">
         <Col
           xs="12"
           sm="12"
@@ -74,7 +74,7 @@ const Portfolio = () => {
           </div>
         </Col>
         <Col xs="12" sm="12" md="5" className="h-100 mobile-hide"></Col>
-        <Col xs="12" sm="12" md="7" className="h-100 portfolio pd-0">
+        <Col xs="12" sm="12" md="7" className="h-100 portfolio">
           <div className="portfolio_exp">
             <TransitionGroup {...groupProps}>
               <Fade bottom>

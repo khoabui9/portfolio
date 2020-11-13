@@ -67,12 +67,25 @@
   position: absolute;
 }
 
+.portfolio_outer {
+  height: 100%;
+}
+
+.portfolio::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.portfolio {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
 @media only screen and (max-width: 768px) {
   .mobile-hide {
     display: none;
-  }
-
-  .portfolio_outer_inner {
-    position: relative;
   }
 }

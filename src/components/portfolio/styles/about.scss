@@ -6,7 +6,7 @@
 }
 
 .about_textList {
-  height: 100px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -18,5 +18,15 @@
 @media only screen and (min-width: 768px) {
   .about_outer {
     position: absolute;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_outer {
+    flex: 1 !important; 
+  }
+
+  .mainAnimate_outer {
+    flex: 2 1 !important; 
   }
 }

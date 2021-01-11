@@ -24,7 +24,7 @@ export const experiences = [
   },
   {
     company: "Maritime IoT - POC",
-    timeline: "2020",
+    timeline: "2020 to present",
     description: [
       "implemented a software platform aiming to provide IoT services around the intermodal shipping industry, starting with the refrigerated containers – reefers.",
     ],

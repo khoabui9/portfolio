@@ -5,7 +5,7 @@ import project3 from "../assets/images/project3.png";
 export const experiences = [
   {
     company: "Mesensei Oy",
-    timeline: "Nov, 2018 to present",
+    timeline: "May, 2019 to present",
     description: [
       "Created Mesensei Admin Tool to manage all Mesensei Apps. Developed Mesensei Web App - Web based application for all Mesensei IOS and Android Apps.",
       "Widgets development.",
@@ -21,6 +21,14 @@ export const experiences = [
       "Developed ThinkFlow QA3. ThinkFlow QA3 is a qualitative assessment, analysis and audit system.",
     ],
     stack: "Javascript / JQuery / Firebase.",
+  },
+  {
+    company: "Maritime IoT - POC",
+    timeline: "2020",
+    description: [
+      "implemented a software platform aiming to provide IoT services around the intermodal shipping industry, starting with the refrigerated containers – reefers.",
+    ],
+    stack: "React / Typescript.",
   },
 ];
 

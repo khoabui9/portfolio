@@ -29,17 +29,16 @@ const DefaultLayout = () => {
   }
 
   return (
+    <Suspense fallback={loading()}>
     <Container fluid className="appContainer">
-      <Suspense fallback={loading()}>
         <DefaultHeader IsOnMobileSize={IsOnMobileSize} />
-      </Suspense>
       <div className="appMain">
         <MainContainer />
       </div>
-      <Suspense fallback={loading()}>
         <DefaultFooter IsOnMobileSize={IsOnMobileSize} />
-      </Suspense>
     </Container>
+    </Suspense>
+
   );
 };
 
